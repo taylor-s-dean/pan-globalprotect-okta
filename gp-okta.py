@@ -111,7 +111,7 @@ def load_conf(cf):
     keys = ["vpn_url", "username", "password", "okta_url"]
 
     if isinstance(cf, bytes):
-        cf = cf.decode('utf-8')
+        cf = cf.decode("utf-8")
 
     line_nr = 0
     for rline in cf.split("\n"):
@@ -591,17 +591,23 @@ def okta_saml_2(conf, s, saml_xml, again=False):
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="""
+
+    parser = argparse.ArgumentParser(
+        description="""
     This is an OpenConnect wrapper script that automates connecting to a
     PaloAlto Networks GlobalProtect VPN using Okta 2FA.
-    """)
-    parser.add_argument("conf_file",
-                        help="e.g. ~/.config/gp-okta.conf")
-    parser.add_argument("--gpg-decrypt", action="store_true",
-                        help="use gpg-home to decrypt gpg encrypted conf_file")
+    """
+    )
+    parser.add_argument("conf_file", help="e.g. ~/.config/gp-okta.conf")
+    parser.add_argument(
+        "--gpg-decrypt",
+        action="store_true",
+        help="use gpg-home to decrypt gpg encrypted conf_file",
+    )
     parser.add_argument("--gpg-home", default=os.path.expanduser("~/.gnupg"))
-    parser.add_argument("--verbose", default=False, action="store_true",
-                        help="enable verbose logging")
+    parser.add_argument(
+        "--verbose", default=False, action="store_true", help="enable verbose logging"
+    )
     args = parser.parse_args()
 
     global verbose
@@ -611,11 +617,12 @@ def main():
     assert not args.gpg_decrypt or os.path.isdir(args.gpg_home)
 
     config_contents = ""
-    with open(args.conf_file, 'r') as f:
+    with open(args.conf_file, "r") as f:
         config_contents = f.read()
 
     if args.gpg_decrypt:
         import gnupg
+
         gpg = gnupg.GPG(gnupghome=args.gpg_home)
         decrypted_contents = gpg.decrypt(config_contents)
 
