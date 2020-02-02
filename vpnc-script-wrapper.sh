@@ -96,9 +96,9 @@ adjust_dns()
 			if [ X"${_insecure}" = X"1" ]; then
 				${_unbound} insecure_remove "${_domain}"
 			fi
-			${_unbound} forward_remove +i "${_domain}" 
+			${_unbound} forward_remove +i "${_domain}"
 			${_unbound} flush_zone "${_domain}"
-			${_unbound} flush_requestlist 
+			${_unbound} flush_requestlist
 		fi
 	done
 	IFS=$OIFS
