@@ -33,7 +33,7 @@ docker build -t gp-okta .
 
 Edit gp-okta.conf and launch Docker container:
 ```
-sh run-docker.sh
+./run-docker.sh
 ```
 
 ## configuration
