@@ -1,3 +1,4 @@
 *~
 gp-okta.conf.*
 /poetry.lock
+.isort.cfg
