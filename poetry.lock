@@ -104,7 +104,7 @@ python-versions = "*"
 
 [[package]]
 name = "pre-commit"
-version = "2.10.1"
+version = "2.12.0"
 description = "A framework for managing and maintaining multi-language pre-commit hooks."
 category = "main"
 optional = false
@@ -216,7 +216,7 @@ testing = ["jaraco.itertools", "func-timeout"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "e8809adef4524074c0e861e225634d3c61c16b044005cde41a4e0aae5bb7c72a"
+content-hash = "7e9ea154ea90ab62ec699be9d05b899b4fd3ea90de452308bd79525ff5d6c35b"
 
 [metadata.files]
 appdirs = [
@@ -298,8 +298,8 @@ nodeenv = [
     {file = "nodeenv-1.4.0.tar.gz", hash = "sha256:26941644654d8dd5378720e38f62a3bac5f9240811fb3b8913d2663a17baa91c"},
 ]
 pre-commit = [
-    {file = "pre_commit-2.10.1-py2.py3-none-any.whl", hash = "sha256:16212d1fde2bed88159287da88ff03796863854b04dc9f838a55979325a3d20e"},
-    {file = "pre_commit-2.10.1.tar.gz", hash = "sha256:399baf78f13f4de82a29b649afd74bef2c4e28eb4f021661fc7f29246e8c7a3a"},
+    {file = "pre_commit-2.12.0-py2.py3-none-any.whl", hash = "sha256:029d53cb83c241fe7d66eeee1e24db426f42c858f15a38d20bcefd8d8e05c9da"},
+    {file = "pre_commit-2.12.0.tar.gz", hash = "sha256:46b6ffbab37986c47d0a35e40906ae029376deed89a0eb2e446fb6e67b220427"},
 ]
 python-gnupg = [
     {file = "python-gnupg-0.4.7.tar.gz", hash = "sha256:2061f56b1942c29b92727bf9aecbd3cea3893acc9cccbdc7eb4604285efe4ac7"},
