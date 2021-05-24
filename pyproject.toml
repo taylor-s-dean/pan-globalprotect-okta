@@ -9,7 +9,7 @@ python = "^3.7"
 lxml = "^4.6.3"
 requests = "^2.25.1"
 python-gnupg = "^0.4.7"
-pre-commit = "^2.12.1"
+pre-commit = "^2.13.0"
 
 [tool.poetry.dev-dependencies]
 
