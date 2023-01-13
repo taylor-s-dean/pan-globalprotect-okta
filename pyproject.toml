@@ -7,7 +7,7 @@ authors = ["Taylor Dean <taylor@makeshift.dev>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 lxml = "^4.6.3"
-requests = "^2.25.1"
+requests = "^2.28.2"
 python-gnupg = "^0.4.7"
 pre-commit = "^2.12.1"
 
