@@ -347,13 +347,13 @@ virtualenv = ">=20.10.0"
 
 [[package]]
 name = "python-gnupg"
-version = "0.4.7"
+version = "0.5.1"
 description = "A wrapper for the Gnu Privacy Guard (GPG or GnuPG)"
 optional = false
 python-versions = "*"
 files = [
-    {file = "python-gnupg-0.4.7.tar.gz", hash = "sha256:2061f56b1942c29b92727bf9aecbd3cea3893acc9cccbdc7eb4604285efe4ac7"},
-    {file = "python_gnupg-0.4.7-py2.py3-none-any.whl", hash = "sha256:3ff5b1bf5e397de6e1fe41a7c0f403dad4e242ac92b345f440eaecfb72a7ebae"},
+    {file = "python-gnupg-0.5.1.tar.gz", hash = "sha256:5674bad4e93876c0b0d3197e314d7f942d39018bf31e2b833f6788a6813c3fb8"},
+    {file = "python_gnupg-0.5.1-py2.py3-none-any.whl", hash = "sha256:bf9b2d9032ef38139b7d64184176cd0b293eaeae6e4f93f50e304c7051174482"},
 ]
 
 [[package]]
@@ -473,4 +473,4 @@ testing = ["func-timeout", "jaraco.itertools"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.7"
-content-hash = "99c02af901ddf18b2734950978f897f92c33defaee1765172437681a5d613e49"
+content-hash = "27d67c3f27ab5c039c3b5384b3aa522a8e1e5501755f101eac8928d0ea00c7b8"
